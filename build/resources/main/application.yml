@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/book-test
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+    hibernate:
+      ddl-auto: create

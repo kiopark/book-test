@@ -1,0 +1,12 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client:
+              id: 385948088077-cvjc7hkli2ej4vv0se8cslcfnvc5mpl5.apps.googleusercontent.com
+              secret: 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
+              scope: profile,email
+              # openid 라는 scope가 있으면 OpenId Provider로 인식하기때문에 구글과 네이버/카카오 등을 나눠서 Oauth2Service를
+              # 만들어야하기 떄문에 제외함
