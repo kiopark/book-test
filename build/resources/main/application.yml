@@ -10,3 +10,7 @@ spring:
       hibernate:
     hibernate:
       ddl-auto: create
+  profiles:
+    include: google
+  session:
+    store-type: jdbc

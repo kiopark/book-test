@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - PostsApiControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>PostsApiControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.book.springboot.web.html">com.book.springboot.web</a> &gt; PostsApiControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.171s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Posts_등록된다()</td>
+<td class="success">0.129s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Posts_수정된다()</td>
+<td class="success">0.042s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2022-01-09 12:37:02.125  INFO 6499 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.book.springboot.web.PostsApiControllerTest], using SpringBootContextLoader
+2022-01-09 12:37:02.127  INFO 6499 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.book.springboot.web.PostsApiControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-01-09 12:37:02.128  INFO 6499 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.book.springboot.web.PostsApiControllerTest]: PostsApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-01-09 12:37:02.131  INFO 6499 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.book.springboot.Application for test class com.book.springboot.web.PostsApiControllerTest
+2022-01-09 12:37:02.133  INFO 6499 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-01-09 12:37:02.134  INFO 6499 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@38d63888, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3d46317f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7828a5fd, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@77dc6340, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7e47074b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@72861c35, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4f3c48d5, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@5b6ee411, org.springframework.test.context.event.EventPublishingTestExecutionListener@1dd5dd68, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@5f700d53, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@72a78c88, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5e45a0a1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6dc8189c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@328d9ae3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7c0093f6]
+2022-01-09 12:37:02.142  INFO 6499 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@107572e4 testClass = PostsApiControllerTest, testInstance = com.book.springboot.web.PostsApiControllerTest@265e84fe, testMethod = Posts_등록된다@PostsApiControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@68684546 testClass = PostsApiControllerTest, locations = '{}', classes = '{class com.book.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@11d6468b, [ImportsContextCustomizer@63e6ebe4 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@c5a03d, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@af7b256, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2595dbe9], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -&gt; true]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@494652f0]; rollback [false]
+Hibernate: insert into posts (id, created_date, last_modified_date, author, content, title) values (null, ?, ?, ?, ?, ?)
+2022-01-09 12:37:02.214  INFO 6499 --- [    Test worker] p6spy                                    : #1641699422214 | took 0ms | statement | connection 28| url jdbc:h2:mem:testdb
+insert into posts (id, created_date, last_modified_date, author, content, title) values (null, ?, ?, ?, ?, ?)
+insert into posts (id, created_date, last_modified_date, author, content, title) values (null, '2022-01-09T12:37:02.212+0900', '2022-01-09T12:37:02.212+0900', 'author', 'content', 'title');
+2022-01-09 12:37:02.223  INFO 6499 --- [    Test worker] p6spy                                    : #1641699422223 | took 0ms | statement | connection 29| url jdbc:h2:mem:testdb
+INSERT INTO SPRING_SESSION(PRIMARY_ID, SESSION_ID, CREATION_TIME, LAST_ACCESS_TIME, MAX_INACTIVE_INTERVAL, EXPIRY_TIME, PRINCIPAL_NAME) VALUES (?, ?, ?, ?, ?, ?, ?)
+INSERT INTO SPRING_SESSION(PRIMARY_ID, SESSION_ID, CREATION_TIME, LAST_ACCESS_TIME, MAX_INACTIVE_INTERVAL, EXPIRY_TIME, PRINCIPAL_NAME) VALUES ('371a018a-8ab4-4f0e-859a-5cc950dd5e08', 'a3ea4c9a-6839-42bc-a384-7721473abf3d', 1641699422155, 1641699422155, 1800, 1641701222155, 'user');
+2022-01-09 12:37:02.241  INFO 6499 --- [    Test worker] p6spy                                    : #1641699422241 | took 0ms | statement | connection 29| url jdbc:h2:mem:testdb
+INSERT INTO SPRING_SESSION_ATTRIBUTES(SESSION_PRIMARY_ID, ATTRIBUTE_NAME, ATTRIBUTE_BYTES) SELECT PRIMARY_ID, ?, ? FROM SPRING_SESSION WHERE SESSION_ID = ?
+INSERT INTO SPRING_SESSION_ATTRIBUTES(SESSION_PRIMARY_ID, ATTRIBUTE_NAME, ATTRIBUTE_BYTES) SELECT PRIMARY_ID, 'SPRING_SECURITY_CONTEXT', 'ACED00057372003D6F72672E737072696E676672616D65776F726B2E73656375726974792E636F72652E636F6E746578742E5365637572697479436F6E74657874496D706C00000000000002080200014C000E61757468656E7469636174696F6E7400324C6F72672F737072696E676672616D65776F726B2F73656375726974792F636F72652F41757468656E7469636174696F6E3B78707372004F6F72672E737072696E676672616D65776F726B2E73656375726974792E61757468656E7469636174696F6E2E557365726E616D6550617373776F726441757468656E7469636174696F6E546F6B656E00000000000002080200024C000B63726564656E7469616C737400124C6A6176612F6C616E672F4F626A6563743B4C00097072696E636970616C71007E0004787200476F72672E737072696E676672616D65776F726B2E73656375726974792E61757468656E7469636174696F6E2E416273747261637441757468656E7469636174696F6E546F6B656ED3AA287E6E47640E0200035A000D61757468656E746963617465644C000B617574686F7269746965737400164C6A6176612F7574696C2F436F6C6C656374696F6E3B4C000764657461696C7371007E0004787001737200266A6176612E7574696C2E436F6C6C656374696F6E7324556E6D6F6469666961626C654C697374FC0F2531B5EC8E100200014C00046C6973747400104C6A6176612F7574696C2F4C6973743B7872002C6A6176612E7574696C2E436F6C6C656374696F6E7324556E6D6F6469666961626C65436F6C6C656374696F6E19420080CB5EF71E0200014C00016371007E00067870737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200426F72672E737072696E676672616D65776F726B2E73656375726974792E636F72652E617574686F726974792E53696D706C654772616E746564417574686F7269747900000000000002080200014C0004726F6C657400124C6A6176612F6C616E672F537472696E673B7870740009524F4C455F555345527871007E000D7074000870617373776F7264737200326F72672E737072696E676672616D65776F726B2E73656375726974792E636F72652E7573657264657461696C732E5573657200000000000002080200075A00116163636F756E744E6F6E457870697265645A00106163636F756E744E6F6E4C6F636B65645A001563726564656E7469616C734E6F6E457870697265645A0007656E61626C65644C000B617574686F72697469657374000F4C6A6176612F7574696C2F5365743B4C000870617373776F726471007E000F4C0008757365726E616D6571007E000F787001010101737200256A6176612E7574696C2E436F6C6C656374696F6E7324556E6D6F6469666961626C65536574801D92D18F9B80550200007871007E000A737200116A6176612E7574696C2E54726565536574DD98509395ED875B0300007870737200466F72672E737072696E676672616D65776F726B2E73656375726974792E636F72652E7573657264657461696C732E5573657224417574686F72697479436F6D70617261746F720000000000000208020000787077040000000171007E00107871007E001274000475736572' FROM SPRING_SESSION WHERE SESSION_ID = 'a3ea4c9a-6839-42bc-a384-7721473abf3d';
+2022-01-09 12:37:02.242  INFO 6499 --- [    Test worker] p6spy                                    : #1641699422242 | took 0ms | commit | connection 29| url jdbc:h2:mem:testdb
+
+;
+2022-01-09 12:37:02.245  INFO 6499 --- [    Test worker] p6spy                                    : #1641699422245 | took 0ms | commit | connection 30| url jdbc:h2:mem:testdb
+
+;
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/v1/posts
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;]
+             Body = {&quot;title&quot;:&quot;title&quot;,&quot;content&quot;:&quot;content&quot;,&quot;author&quot;:&quot;author&quot;}
+    Session Attrs = {SPRING_SECURITY_CONTEXT=org.springframework.security.core.context.SecurityContextImpl@ca25360: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@ca25360: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_USER; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER}
+
+Handler:
+             Type = com.book.springboot.web.PostsApiController
+           Method = com.book.springboot.web.PostsApiController#save(PostsSaveRequestDto)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, Set-Cookie:&quot;SESSION=YTNlYTRjOWEtNjgzOS00MmJjLWEzODQtNzcyMTQ3M2FiZjNk; Path=/; HttpOnly; SameSite=Lax&quot;]
+     Content type = application/json
+             Body = 1
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = [[MockCookie@694fa5de name = 'SESSION', value = 'YTNlYTRjOWEtNjgzOS00MmJjLWEzODQtNzcyMTQ3M2FiZjNk', comment = [null], domain = [null], maxAge = -1, path = '/', secure = false, version = 0, httpOnly = true]]
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+2022-01-09 12:37:02.257  INFO 6499 --- [    Test worker] p6spy                                    : #1641699422257 | took 0ms | statement | connection 28| url jdbc:h2:mem:testdb
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_;
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+2022-01-09 12:37:02.261  INFO 6499 --- [    Test worker] p6spy                                    : #1641699422261 | took 0ms | statement | connection 28| url jdbc:h2:mem:testdb
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_;
+Hibernate: delete from posts where id=?
+2022-01-09 12:37:02.266  INFO 6499 --- [    Test worker] p6spy                                    : #1641699422266 | took 0ms | statement | connection 28| url jdbc:h2:mem:testdb
+delete from posts where id=?
+delete from posts where id=1;
+2022-01-09 12:37:02.267  INFO 6499 --- [    Test worker] p6spy                                    : #1641699422267 | took 0ms | commit | connection 28| url jdbc:h2:mem:testdb
+
+;
+2022-01-09 12:37:02.267  INFO 6499 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Committed transaction for test: [DefaultTestContext@107572e4 testClass = PostsApiControllerTest, testInstance = com.book.springboot.web.PostsApiControllerTest@265e84fe, testMethod = Posts_등록된다@PostsApiControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@68684546 testClass = PostsApiControllerTest, locations = '{}', classes = '{class com.book.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@11d6468b, [ImportsContextCustomizer@63e6ebe4 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@c5a03d, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@af7b256, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2595dbe9], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -&gt; true]]
+2022-01-09 12:37:02.271  INFO 6499 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@107572e4 testClass = PostsApiControllerTest, testInstance = com.book.springboot.web.PostsApiControllerTest@727adeea, testMethod = Posts_수정된다@PostsApiControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@68684546 testClass = PostsApiControllerTest, locations = '{}', classes = '{class com.book.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@11d6468b, [ImportsContextCustomizer@63e6ebe4 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@c5a03d, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@af7b256, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2595dbe9], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -&gt; true]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@494652f0]; rollback [false]
+Hibernate: insert into posts (id, created_date, last_modified_date, author, content, title) values (null, ?, ?, ?, ?, ?)
+2022-01-09 12:37:02.277  INFO 6499 --- [    Test worker] p6spy                                    : #1641699422276 | took 0ms | statement | connection 31| url jdbc:h2:mem:testdb
+insert into posts (id, created_date, last_modified_date, author, content, title) values (null, ?, ?, ?, ?, ?)
+insert into posts (id, created_date, last_modified_date, author, content, title) values (null, '2022-01-09T12:37:02.275+0900', '2022-01-09T12:37:02.275+0900', 'author', 'content', 'title');
+2022-01-09 12:37:02.286  INFO 6499 --- [    Test worker] p6spy                                    : #1641699422286 | took 0ms | statement | connection 32| url jdbc:h2:mem:testdb
+INSERT INTO SPRING_SESSION(PRIMARY_ID, SESSION_ID, CREATION_TIME, LAST_ACCESS_TIME, MAX_INACTIVE_INTERVAL, EXPIRY_TIME, PRINCIPAL_NAME) VALUES (?, ?, ?, ?, ?, ?, ?)
+INSERT INTO SPRING_SESSION(PRIMARY_ID, SESSION_ID, CREATION_TIME, LAST_ACCESS_TIME, MAX_INACTIVE_INTERVAL, EXPIRY_TIME, PRINCIPAL_NAME) VALUES ('52e0bb8d-5106-440e-9c03-1a920a6c802d', '0b64c395-9cad-4ad5-9e1f-5b9531c73698', 1641699422278, 1641699422278, 1800, 1641701222278, 'user');
+2022-01-09 12:37:02.288  INFO 6499 --- [    Test worker] p6spy                                    : #1641699422288 | took 0ms | statement | connection 32| url jdbc:h2:mem:testdb
+INSERT INTO SPRING_SESSION_ATTRIBUTES(SESSION_PRIMARY_ID, ATTRIBUTE_NAME, ATTRIBUTE_BYTES) SELECT PRIMARY_ID, ?, ? FROM SPRING_SESSION WHERE SESSION_ID = ?
+INSERT INTO SPRING_SESSION_ATTRIBUTES(SESSION_PRIMARY_ID, ATTRIBUTE_NAME, ATTRIBUTE_BYTES) SELECT PRIMARY_ID, 'SPRING_SECURITY_CONTEXT', 'ACED00057372003D6F72672E737072696E676672616D65776F726B2E73656375726974792E636F72652E636F6E746578742E5365637572697479436F6E74657874496D706C00000000000002080200014C000E61757468656E7469636174696F6E7400324C6F72672F737072696E676672616D65776F726B2F73656375726974792F636F72652F41757468656E7469636174696F6E3B78707372004F6F72672E737072696E676672616D65776F726B2E73656375726974792E61757468656E7469636174696F6E2E557365726E616D6550617373776F726441757468656E7469636174696F6E546F6B656E00000000000002080200024C000B63726564656E7469616C737400124C6A6176612F6C616E672F4F626A6563743B4C00097072696E636970616C71007E0004787200476F72672E737072696E676672616D65776F726B2E73656375726974792E61757468656E7469636174696F6E2E416273747261637441757468656E7469636174696F6E546F6B656ED3AA287E6E47640E0200035A000D61757468656E746963617465644C000B617574686F7269746965737400164C6A6176612F7574696C2F436F6C6C656374696F6E3B4C000764657461696C7371007E0004787001737200266A6176612E7574696C2E436F6C6C656374696F6E7324556E6D6F6469666961626C654C697374FC0F2531B5EC8E100200014C00046C6973747400104C6A6176612F7574696C2F4C6973743B7872002C6A6176612E7574696C2E436F6C6C656374696F6E7324556E6D6F6469666961626C65436F6C6C656374696F6E19420080CB5EF71E0200014C00016371007E00067870737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200426F72672E737072696E676672616D65776F726B2E73656375726974792E636F72652E617574686F726974792E53696D706C654772616E746564417574686F7269747900000000000002080200014C0004726F6C657400124C6A6176612F6C616E672F537472696E673B7870740009524F4C455F555345527871007E000D7074000870617373776F7264737200326F72672E737072696E676672616D65776F726B2E73656375726974792E636F72652E7573657264657461696C732E5573657200000000000002080200075A00116163636F756E744E6F6E457870697265645A00106163636F756E744E6F6E4C6F636B65645A001563726564656E7469616C734E6F6E457870697265645A0007656E61626C65644C000B617574686F72697469657374000F4C6A6176612F7574696C2F5365743B4C000870617373776F726471007E000F4C0008757365726E616D6571007E000F787001010101737200256A6176612E7574696C2E436F6C6C656374696F6E7324556E6D6F6469666961626C65536574801D92D18F9B80550200007871007E000A737200116A6176612E7574696C2E54726565536574DD98509395ED875B0300007870737200466F72672E737072696E676672616D65776F726B2E73656375726974792E636F72652E7573657264657461696C732E5573657224417574686F72697479436F6D70617261746F720000000000000208020000787077040000000171007E00107871007E001274000475736572' FROM SPRING_SESSION WHERE SESSION_ID = '0b64c395-9cad-4ad5-9e1f-5b9531c73698';
+2022-01-09 12:37:02.289  INFO 6499 --- [    Test worker] p6spy                                    : #1641699422289 | took 0ms | commit | connection 32| url jdbc:h2:mem:testdb
+
+;
+2022-01-09 12:37:02.290  INFO 6499 --- [    Test worker] p6spy                                    : #1641699422290 | took 0ms | commit | connection 33| url jdbc:h2:mem:testdb
+
+;
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/v1/posts/2
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;]
+             Body = {&quot;title&quot;:&quot;updateTitle&quot;,&quot;content&quot;:&quot;updateContent&quot;,&quot;author&quot;:null}
+    Session Attrs = {SPRING_SECURITY_CONTEXT=org.springframework.security.core.context.SecurityContextImpl@ca25360: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@ca25360: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_USER; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER}
+
+Handler:
+             Type = com.book.springboot.web.PostsApiController
+           Method = com.book.springboot.web.PostsApiController#update(Long, PostsSaveRequestDto)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;1; mode=block&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, Set-Cookie:&quot;SESSION=MGI2NGMzOTUtOWNhZC00YWQ1LTllMWYtNWI5NTMxYzczNjk4; Path=/; HttpOnly; SameSite=Lax&quot;]
+     Content type = application/json
+             Body = 2
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = [[MockCookie@4835a7a8 name = 'SESSION', value = 'MGI2NGMzOTUtOWNhZC00YWQ1LTllMWYtNWI5NTMxYzczNjk4', comment = [null], domain = [null], maxAge = -1, path = '/', secure = false, version = 0, httpOnly = true]]
+Hibernate: update posts set created_date=?, last_modified_date=?, author=?, content=?, title=? where id=?
+2022-01-09 12:37:02.300  INFO 6499 --- [    Test worker] p6spy                                    : #1641699422300 | took 0ms | statement | connection 31| url jdbc:h2:mem:testdb
+update posts set created_date=?, last_modified_date=?, author=?, content=?, title=? where id=?
+update posts set created_date='2022-01-09T12:37:02.275+0900', last_modified_date='2022-01-09T12:37:02.296+0900', author='author', content='updateContent', title='updateTitle' where id=2;
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+2022-01-09 12:37:02.302  INFO 6499 --- [    Test worker] p6spy                                    : #1641699422302 | took 0ms | statement | connection 31| url jdbc:h2:mem:testdb
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_;
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+2022-01-09 12:37:02.304  INFO 6499 --- [    Test worker] p6spy                                    : #1641699422304 | took 0ms | statement | connection 31| url jdbc:h2:mem:testdb
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_;
+Hibernate: delete from posts where id=?
+2022-01-09 12:37:02.309  INFO 6499 --- [    Test worker] p6spy                                    : #1641699422309 | took 0ms | statement | connection 31| url jdbc:h2:mem:testdb
+delete from posts where id=?
+delete from posts where id=2;
+2022-01-09 12:37:02.309  INFO 6499 --- [    Test worker] p6spy                                    : #1641699422309 | took 0ms | commit | connection 31| url jdbc:h2:mem:testdb
+
+;
+2022-01-09 12:37:02.310  INFO 6499 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Committed transaction for test: [DefaultTestContext@107572e4 testClass = PostsApiControllerTest, testInstance = com.book.springboot.web.PostsApiControllerTest@727adeea, testMethod = Posts_수정된다@PostsApiControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@68684546 testClass = PostsApiControllerTest, locations = '{}', classes = '{class com.book.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@11d6468b, [ImportsContextCustomizer@63e6ebe4 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@c5a03d, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@af7b256, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2595dbe9], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -&gt; true]]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.1</a> at 2022. 1. 9. 오후 12:37:02</p>
+</div>
+</div>
+</body>
+</html>

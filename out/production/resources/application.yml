@@ -11,4 +11,6 @@ spring:
     hibernate:
       ddl-auto: create
   profiles:
-    include: oauth
+    include: google
+  session:
+    store-type: jdbc
