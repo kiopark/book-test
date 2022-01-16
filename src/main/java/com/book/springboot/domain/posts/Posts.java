@@ -13,7 +13,7 @@ import javax.persistence.*;
 public class Posts extends BaseTimeEntity {
 
   @Id // 해당 테이블의 PK
-  @GeneratedValue(strategy = GenerationType.IDENTITY) // PK의 생성규칙 (스프링 부트 2.x 부터는 GenerationType.IDENTITY 옵션을 추가해야 auto_increment 가능)
+  @GeneratedValue // PK의 생성규칙 (스프링 부트 2.x 부터는 GenerationType.IDENTITY 옵션을 추가해야 auto_increment 가능)
   private Long id;
 
   @Column(length = 500, nullable = false) // 컬럼의 옵션

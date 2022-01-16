@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.199s</div>
+<div class="counter">0.173s</div>
 <p>duration</p>
 </div>
 </td>
@@ -84,7 +84,7 @@
 </tr>
 <tr>
 <td class="success">게시글저장_불러오기</td>
-<td class="success">0.180s</td>
+<td class="success">0.154s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -101,113 +101,121 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.1.RELEASE)
 
-2022-01-16 10:19:15.260  INFO 4479 --- [    Test worker] c.b.s.domain.posts.PostsRepositoryTest   : Starting PostsRepositoryTest on baggioui-MacBook-Pro.local with PID 4479 (started by parkkio in /Users/parkkio/Desktop/study/book-test)
-2022-01-16 10:19:15.261  INFO 4479 --- [    Test worker] c.b.s.domain.posts.PostsRepositoryTest   : No active profile set, falling back to default profiles: default
-2022-01-16 10:19:15.704  INFO 4479 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2022-01-16 10:19:15.784  INFO 4479 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66ms. Found 2 repository interfaces.
-2022-01-16 10:19:16.071  INFO 4479 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-01-16 10:19:16.357  INFO 4479 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-16 10:19:16.625  INFO 4479 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-16 10:19:16.761  INFO 4479 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-16 10:19:16.878  INFO 4479 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
-2022-01-16 10:19:16.945  INFO 4479 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2022-01-16 10:19:17.113  INFO 4479 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-16 14:12:47.704  INFO 9426 --- [    Test worker] c.b.s.domain.posts.PostsRepositoryTest   : Starting PostsRepositoryTest on baggioui-MacBook-Pro.local with PID 9426 (started by parkkio in /Users/parkkio/Desktop/study/book-test)
+2022-01-16 14:12:47.705  INFO 9426 --- [    Test worker] c.b.s.domain.posts.PostsRepositoryTest   : The following profiles are active: google
+2022-01-16 14:12:48.050  INFO 9426 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-01-16 14:12:48.111  INFO 9426 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52ms. Found 2 repository interfaces.
+2022-01-16 14:12:48.361  INFO 9426 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-16 14:12:48.677  INFO 9426 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-16 14:12:48.743  INFO 9426 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2022-01-16 14:12:48.787  INFO 9426 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-01-16 14:12:48.904  INFO 9426 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-16 14:12:49.099  INFO 9426 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-16 14:12:49.130  INFO 9426 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 Hibernate: drop table posts if exists
-2022-01-16 10:19:17.878  INFO 4479 --- [    Test worker] p6spy                                    : #1642295957878 | took 1ms | statement | connection 2| url jdbc:h2:mem:testdb
+2022-01-16 14:12:49.723  INFO 9426 --- [    Test worker] p6spy                                    : #1642309969723 | took 1ms | statement | connection 1| url jdbc:h2:mem:testdb
 drop table posts if exists
 drop table posts if exists;
 Hibernate: drop table user if exists
-2022-01-16 10:19:17.879  INFO 4479 --- [    Test worker] p6spy                                    : #1642295957879 | took 0ms | statement | connection 2| url jdbc:h2:mem:testdb
+2022-01-16 14:12:49.724  INFO 9426 --- [    Test worker] p6spy                                    : #1642309969724 | took 0ms | statement | connection 1| url jdbc:h2:mem:testdb
 drop table user if exists
 drop table user if exists;
 Hibernate: drop sequence if exists hibernate_sequence
-2022-01-16 10:19:17.879  INFO 4479 --- [    Test worker] p6spy                                    : #1642295957879 | took 0ms | statement | connection 2| url jdbc:h2:mem:testdb
+2022-01-16 14:12:49.725  INFO 9426 --- [    Test worker] p6spy                                    : #1642309969725 | took 0ms | statement | connection 1| url jdbc:h2:mem:testdb
 drop sequence if exists hibernate_sequence
 drop sequence if exists hibernate_sequence;
 Hibernate: create sequence hibernate_sequence start with 1 increment by 1
-2022-01-16 10:19:17.887  INFO 4479 --- [    Test worker] p6spy                                    : #1642295957887 | took 2ms | statement | connection 3| url jdbc:h2:mem:testdb
+2022-01-16 14:12:49.729  INFO 9426 --- [    Test worker] p6spy                                    : #1642309969729 | took 1ms | statement | connection 2| url jdbc:h2:mem:testdb
 create sequence hibernate_sequence start with 1 increment by 1
 create sequence hibernate_sequence start with 1 increment by 1;
-Hibernate: create table posts (id bigint generated by default as identity, created_date timestamp, last_modified_date timestamp, author varchar(255), content TEXT not null, title varchar(500) not null, primary key (id))
-2022-01-16 10:19:17.898  INFO 4479 --- [    Test worker] p6spy                                    : #1642295957898 | took 10ms | statement | connection 3| url jdbc:h2:mem:testdb
-create table posts (id bigint generated by default as identity, created_date timestamp, last_modified_date timestamp, author varchar(255), content TEXT not null, title varchar(500) not null, primary key (id))
-create table posts (id bigint generated by default as identity, created_date timestamp, last_modified_date timestamp, author varchar(255), content TEXT not null, title varchar(500) not null, primary key (id));
+Hibernate: create table posts (posts_id bigint not null, created_date timestamp, last_modified_date timestamp, author varchar(255), content TEXT not null, title varchar(500) not null, primary key (posts_id))
+2022-01-16 14:12:49.734  INFO 9426 --- [    Test worker] p6spy                                    : #1642309969734 | took 4ms | statement | connection 2| url jdbc:h2:mem:testdb
+create table posts (posts_id bigint not null, created_date timestamp, last_modified_date timestamp, author varchar(255), content TEXT not null, title varchar(500) not null, primary key (posts_id))
+create table posts (posts_id bigint not null, created_date timestamp, last_modified_date timestamp, author varchar(255), content TEXT not null, title varchar(500) not null, primary key (posts_id));
 Hibernate: create table user (id bigint not null, created_date timestamp, last_modified_date timestamp, email varchar(255) not null, name varchar(255) not null, picture varchar(255), role varchar(255) not null, primary key (id))
-2022-01-16 10:19:17.900  INFO 4479 --- [    Test worker] p6spy                                    : #1642295957900 | took 1ms | statement | connection 3| url jdbc:h2:mem:testdb
+2022-01-16 14:12:49.736  INFO 9426 --- [    Test worker] p6spy                                    : #1642309969736 | took 1ms | statement | connection 2| url jdbc:h2:mem:testdb
 create table user (id bigint not null, created_date timestamp, last_modified_date timestamp, email varchar(255) not null, name varchar(255) not null, picture varchar(255), role varchar(255) not null, primary key (id))
 create table user (id bigint not null, created_date timestamp, last_modified_date timestamp, email varchar(255) not null, name varchar(255) not null, picture varchar(255), role varchar(255) not null, primary key (id));
-2022-01-16 10:19:17.905  INFO 4479 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-16 10:19:17.916  INFO 4479 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-16 10:19:18.429  WARN 4479 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-16 10:19:18.877  INFO 4479 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c86e9a0, org.springframework.security.web.context.SecurityContextPersistenceFilter@277c996, org.springframework.security.web.header.HeaderWriterFilter@1023923c, org.springframework.security.web.authentication.logout.LogoutFilter@20be17b6, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@754dd9ba, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@1fc9f94f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2dba2d48, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@64e2d78c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@545caddc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58e27719, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7be11d9a, org.springframework.security.web.session.SessionManagementFilter@3288e4a1, org.springframework.security.web.access.ExceptionTranslationFilter@7d75610d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25917f1c]
-2022-01-16 10:19:19.178  INFO 4479 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-01-16 10:19:19.219  INFO 4479 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-01-16 10:19:19.387  INFO 4479 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2022-01-16 10:19:19.513  INFO 4479 --- [    Test worker] p6spy                                    : #1642295959513 | took 5ms | statement | connection 9| url jdbc:h2:mem:testdb
+2022-01-16 14:12:49.737  INFO 9426 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-16 14:12:49.744  INFO 9426 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-16 14:12:50.138  WARN 9426 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-16 14:12:50.489  INFO 9426 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3510fc89, org.springframework.security.web.context.SecurityContextPersistenceFilter@474ea28a, org.springframework.security.web.header.HeaderWriterFilter@72159d3d, org.springframework.security.web.authentication.logout.LogoutFilter@62b53b88, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@1ddd3868, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@6a9ff230, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6318970c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5f0bc4a9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31905cc5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f32d3bf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@127e941f, org.springframework.security.web.session.SessionManagementFilter@555b3fba, org.springframework.security.web.access.ExceptionTranslationFilter@a5f9ef8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5704c53f]
+2022-01-16 14:12:50.711  INFO 9426 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-16 14:12:50.744  INFO 9426 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-01-16 14:12:50.870  INFO 9426 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-01-16 14:12:50.980  INFO 9426 --- [    Test worker] p6spy                                    : #1642309970979 | took 3ms | statement | connection 7| url jdbc:h2:mem:testdb
 CREATE TABLE SPRING_SESSION ( PRIMARY_ID CHAR(36) NOT NULL, SESSION_ID CHAR(36) NOT NULL, CREATION_TIME BIGINT NOT NULL, LAST_ACCESS_TIME BIGINT NOT NULL, MAX_INACTIVE_INTERVAL INT NOT NULL, EXPIRY_TIME BIGINT NOT NULL, PRINCIPAL_NAME VARCHAR(100), CONSTRAINT SPRING_SESSION_PK PRIMARY KEY (PRIMARY_ID) )
 CREATE TABLE SPRING_SESSION ( PRIMARY_ID CHAR(36) NOT NULL, SESSION_ID CHAR(36) NOT NULL, CREATION_TIME BIGINT NOT NULL, LAST_ACCESS_TIME BIGINT NOT NULL, MAX_INACTIVE_INTERVAL INT NOT NULL, EXPIRY_TIME BIGINT NOT NULL, PRINCIPAL_NAME VARCHAR(100), CONSTRAINT SPRING_SESSION_PK PRIMARY KEY (PRIMARY_ID) );
-2022-01-16 10:19:19.514  INFO 4479 --- [    Test worker] p6spy                                    : #1642295959514 | took 0ms | statement | connection 9| url jdbc:h2:mem:testdb
+2022-01-16 14:12:50.981  INFO 9426 --- [    Test worker] p6spy                                    : #1642309970981 | took 0ms | statement | connection 7| url jdbc:h2:mem:testdb
 CREATE UNIQUE INDEX SPRING_SESSION_IX1 ON SPRING_SESSION (SESSION_ID)
 CREATE UNIQUE INDEX SPRING_SESSION_IX1 ON SPRING_SESSION (SESSION_ID);
-2022-01-16 10:19:19.515  INFO 4479 --- [    Test worker] p6spy                                    : #1642295959515 | took 0ms | statement | connection 9| url jdbc:h2:mem:testdb
+2022-01-16 14:12:50.981  INFO 9426 --- [    Test worker] p6spy                                    : #1642309970981 | took 0ms | statement | connection 7| url jdbc:h2:mem:testdb
 CREATE INDEX SPRING_SESSION_IX2 ON SPRING_SESSION (EXPIRY_TIME)
 CREATE INDEX SPRING_SESSION_IX2 ON SPRING_SESSION (EXPIRY_TIME);
-2022-01-16 10:19:19.516  INFO 4479 --- [    Test worker] p6spy                                    : #1642295959516 | took 0ms | statement | connection 9| url jdbc:h2:mem:testdb
+2022-01-16 14:12:50.982  INFO 9426 --- [    Test worker] p6spy                                    : #1642309970982 | took 0ms | statement | connection 7| url jdbc:h2:mem:testdb
 CREATE INDEX SPRING_SESSION_IX3 ON SPRING_SESSION (PRINCIPAL_NAME)
 CREATE INDEX SPRING_SESSION_IX3 ON SPRING_SESSION (PRINCIPAL_NAME);
-2022-01-16 10:19:19.526  INFO 4479 --- [    Test worker] p6spy                                    : #1642295959526 | took 9ms | statement | connection 9| url jdbc:h2:mem:testdb
+2022-01-16 14:12:50.989  INFO 9426 --- [    Test worker] p6spy                                    : #1642309970989 | took 6ms | statement | connection 7| url jdbc:h2:mem:testdb
 CREATE TABLE SPRING_SESSION_ATTRIBUTES ( SESSION_PRIMARY_ID CHAR(36) NOT NULL, ATTRIBUTE_NAME VARCHAR(200) NOT NULL, ATTRIBUTE_BYTES LONGVARBINARY NOT NULL, CONSTRAINT SPRING_SESSION_ATTRIBUTES_PK PRIMARY KEY (SESSION_PRIMARY_ID, ATTRIBUTE_NAME), CONSTRAINT SPRING_SESSION_ATTRIBUTES_FK FOREIGN KEY (SESSION_PRIMARY_ID) REFERENCES SPRING_SESSION(PRIMARY_ID) ON DELETE CASCADE )
 CREATE TABLE SPRING_SESSION_ATTRIBUTES ( SESSION_PRIMARY_ID CHAR(36) NOT NULL, ATTRIBUTE_NAME VARCHAR(200) NOT NULL, ATTRIBUTE_BYTES LONGVARBINARY NOT NULL, CONSTRAINT SPRING_SESSION_ATTRIBUTES_PK PRIMARY KEY (SESSION_PRIMARY_ID, ATTRIBUTE_NAME), CONSTRAINT SPRING_SESSION_ATTRIBUTES_FK FOREIGN KEY (SESSION_PRIMARY_ID) REFERENCES SPRING_SESSION(PRIMARY_ID) ON DELETE CASCADE );
-2022-01-16 10:19:19.586  INFO 4479 --- [    Test worker] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2022-01-16 10:19:19.595  INFO 4479 --- [    Test worker] c.b.s.domain.posts.PostsRepositoryTest   : Started PostsRepositoryTest in 4.364 seconds (JVM running for 9.23)
-Hibernate: insert into posts (id, created_date, last_modified_date, author, content, title) values (null, ?, ?, ?, ?, ?)
-2022-01-16 10:19:19.704  INFO 4479 --- [    Test worker] p6spy                                    : #1642295959704 | took 3ms | statement | connection 10| url jdbc:h2:mem:testdb
-insert into posts (id, created_date, last_modified_date, author, content, title) values (null, ?, ?, ?, ?, ?)
-insert into posts (id, created_date, last_modified_date, author, content, title) values (null, '2022-01-16T10:19:19.661+0900', '2022-01-16T10:19:19.661+0900', 'goril2504@gmail.com', '테스트 본문', '테스트 게시글');
-2022-01-16 10:19:19.719  INFO 4479 --- [    Test worker] p6spy                                    : #1642295959719 | took 0ms | commit | connection 10| url jdbc:h2:mem:testdb
+2022-01-16 14:12:51.045  INFO 9426 --- [    Test worker] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-01-16 14:12:51.050  INFO 9426 --- [    Test worker] c.b.s.domain.posts.PostsRepositoryTest   : Started PostsRepositoryTest in 3.372 seconds (JVM running for 7.29)
+Hibernate: call next value for hibernate_sequence
+2022-01-16 14:12:51.121  INFO 9426 --- [    Test worker] p6spy                                    : #1642309971121 | took 3ms | statement | connection 8| url jdbc:h2:mem:testdb
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+Hibernate: insert into posts (created_date, last_modified_date, author, content, title, posts_id) values (?, ?, ?, ?, ?, ?)
+2022-01-16 14:12:51.160  INFO 9426 --- [    Test worker] p6spy                                    : #1642309971160 | took 3ms | statement | connection 8| url jdbc:h2:mem:testdb
+insert into posts (created_date, last_modified_date, author, content, title, posts_id) values (?, ?, ?, ?, ?, ?)
+insert into posts (created_date, last_modified_date, author, content, title, posts_id) values ('2022-01-16T14:12:51.106+0900', '2022-01-16T14:12:51.106+0900', 'goril2504@gmail.com', '테스트 본문', '테스트 게시글', 1);
+2022-01-16 14:12:51.162  INFO 9426 --- [    Test worker] p6spy                                    : #1642309971162 | took 0ms | commit | connection 8| url jdbc:h2:mem:testdb
 
 ;
-Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
-2022-01-16 10:19:19.744  INFO 4479 --- [    Test worker] p6spy                                    : #1642295959744 | took 4ms | statement | connection 11| url jdbc:h2:mem:testdb
-select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
-select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_;
-2022-01-16 10:19:19.755  INFO 4479 --- [    Test worker] p6spy                                    : #1642295959755 | took 0ms | commit | connection 11| url jdbc:h2:mem:testdb
+Hibernate: select posts0_.posts_id as posts_id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+2022-01-16 14:12:51.183  INFO 9426 --- [    Test worker] p6spy                                    : #1642309971183 | took 0ms | statement | connection 9| url jdbc:h2:mem:testdb
+select posts0_.posts_id as posts_id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+select posts0_.posts_id as posts_id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_;
+2022-01-16 14:12:51.190  INFO 9426 --- [    Test worker] p6spy                                    : #1642309971190 | took 0ms | commit | connection 9| url jdbc:h2:mem:testdb
 
 ;
-Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
-2022-01-16 10:19:19.758  INFO 4479 --- [    Test worker] p6spy                                    : #1642295959758 | took 0ms | statement | connection 12| url jdbc:h2:mem:testdb
-select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
-select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_;
-Hibernate: delete from posts where id=?
-2022-01-16 10:19:19.777  INFO 4479 --- [    Test worker] p6spy                                    : #1642295959777 | took 1ms | statement | connection 12| url jdbc:h2:mem:testdb
-delete from posts where id=?
-delete from posts where id=1;
-2022-01-16 10:19:19.779  INFO 4479 --- [    Test worker] p6spy                                    : #1642295959779 | took 0ms | commit | connection 12| url jdbc:h2:mem:testdb
+Hibernate: select posts0_.posts_id as posts_id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+2022-01-16 14:12:51.192  INFO 9426 --- [    Test worker] p6spy                                    : #1642309971192 | took 0ms | statement | connection 10| url jdbc:h2:mem:testdb
+select posts0_.posts_id as posts_id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+select posts0_.posts_id as posts_id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_;
+Hibernate: delete from posts where posts_id=?
+2022-01-16 14:12:51.204  INFO 9426 --- [    Test worker] p6spy                                    : #1642309971204 | took 0ms | statement | connection 10| url jdbc:h2:mem:testdb
+delete from posts where posts_id=?
+delete from posts where posts_id=1;
+2022-01-16 14:12:51.206  INFO 9426 --- [    Test worker] p6spy                                    : #1642309971206 | took 0ms | commit | connection 10| url jdbc:h2:mem:testdb
 
 ;
-Hibernate: insert into posts (id, created_date, last_modified_date, author, content, title) values (null, ?, ?, ?, ?, ?)
-2022-01-16 10:19:19.787  INFO 4479 --- [    Test worker] p6spy                                    : #1642295959787 | took 0ms | statement | connection 13| url jdbc:h2:mem:testdb
-insert into posts (id, created_date, last_modified_date, author, content, title) values (null, ?, ?, ?, ?, ?)
-insert into posts (id, created_date, last_modified_date, author, content, title) values (null, '2022-01-16T10:19:19.785+0900', '2022-01-16T10:19:19.785+0900', 'author', 'content', 'title');
-2022-01-16 10:19:19.788  INFO 4479 --- [    Test worker] p6spy                                    : #1642295959788 | took 0ms | commit | connection 13| url jdbc:h2:mem:testdb
+Hibernate: call next value for hibernate_sequence
+2022-01-16 14:12:51.212  INFO 9426 --- [    Test worker] p6spy                                    : #1642309971212 | took 0ms | statement | connection 11| url jdbc:h2:mem:testdb
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+Hibernate: insert into posts (created_date, last_modified_date, author, content, title, posts_id) values (?, ?, ?, ?, ?, ?)
+2022-01-16 14:12:51.214  INFO 9426 --- [    Test worker] p6spy                                    : #1642309971214 | took 0ms | statement | connection 11| url jdbc:h2:mem:testdb
+insert into posts (created_date, last_modified_date, author, content, title, posts_id) values (?, ?, ?, ?, ?, ?)
+insert into posts (created_date, last_modified_date, author, content, title, posts_id) values ('2022-01-16T14:12:51.211+0900', '2022-01-16T14:12:51.211+0900', 'author', 'content', 'title', 2);
+2022-01-16 14:12:51.215  INFO 9426 --- [    Test worker] p6spy                                    : #1642309971215 | took 0ms | commit | connection 11| url jdbc:h2:mem:testdb
 
 ;
-Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
-2022-01-16 10:19:19.790  INFO 4479 --- [    Test worker] p6spy                                    : #1642295959790 | took 0ms | statement | connection 14| url jdbc:h2:mem:testdb
-select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
-select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_;
-2022-01-16 10:19:19.792  INFO 4479 --- [    Test worker] p6spy                                    : #1642295959792 | took 0ms | commit | connection 14| url jdbc:h2:mem:testdb
+Hibernate: select posts0_.posts_id as posts_id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+2022-01-16 14:12:51.218  INFO 9426 --- [    Test worker] p6spy                                    : #1642309971217 | took 0ms | statement | connection 12| url jdbc:h2:mem:testdb
+select posts0_.posts_id as posts_id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+select posts0_.posts_id as posts_id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_;
+2022-01-16 14:12:51.219  INFO 9426 --- [    Test worker] p6spy                                    : #1642309971219 | took 0ms | commit | connection 12| url jdbc:h2:mem:testdb
 
 ;
-Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
-2022-01-16 10:19:19.795  INFO 4479 --- [    Test worker] p6spy                                    : #1642295959795 | took 0ms | statement | connection 15| url jdbc:h2:mem:testdb
-select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
-select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_;
-Hibernate: delete from posts where id=?
-2022-01-16 10:19:19.798  INFO 4479 --- [    Test worker] p6spy                                    : #1642295959798 | took 0ms | statement | connection 15| url jdbc:h2:mem:testdb
-delete from posts where id=?
-delete from posts where id=2;
-2022-01-16 10:19:19.799  INFO 4479 --- [    Test worker] p6spy                                    : #1642295959798 | took 0ms | commit | connection 15| url jdbc:h2:mem:testdb
+Hibernate: select posts0_.posts_id as posts_id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+2022-01-16 14:12:51.222  INFO 9426 --- [    Test worker] p6spy                                    : #1642309971221 | took 0ms | statement | connection 13| url jdbc:h2:mem:testdb
+select posts0_.posts_id as posts_id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+select posts0_.posts_id as posts_id1_0_, posts0_.created_date as created_2_0_, posts0_.last_modified_date as last_mod3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_;
+Hibernate: delete from posts where posts_id=?
+2022-01-16 14:12:51.225  INFO 9426 --- [    Test worker] p6spy                                    : #1642309971225 | took 0ms | statement | connection 13| url jdbc:h2:mem:testdb
+delete from posts where posts_id=?
+delete from posts where posts_id=2;
+2022-01-16 14:12:51.226  INFO 9426 --- [    Test worker] p6spy                                    : #1642309971226 | took 0ms | commit | connection 13| url jdbc:h2:mem:testdb
 
 ;
 </pre>
@@ -221,7 +229,7 @@ delete from posts where id=2;
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.1</a> at 2022. 1. 16. 오전 10:19:22</p>
+<a href="http://www.gradle.org">Gradle 6.1</a> at 2022. 1. 16. 오후 2:12:52</p>
 </div>
 </div>
 </body>
