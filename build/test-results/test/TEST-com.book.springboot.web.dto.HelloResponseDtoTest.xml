@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite name="com.book.springboot.web.dto.HelloResponseDtoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-16T01:19:11" hostname="baggioui-MacBook-Pro.local" time="0.092">
   <properties/>
   <testcase name="롬복_기능_테스트" classname="com.book.springboot.web.dto.HelloResponseDtoTest" time="0.092"/>
+=======
+<<<<<<< HEAD
+<testsuite name="com.book.springboot.web.dto.HelloResponseDtoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-16T01:22:29" hostname="springboot2-webservice" time="0.004">
+  <properties/>
+  <testcase name="롬복_기능_테스트" classname="com.book.springboot.web.dto.HelloResponseDtoTest" time="0.004"/>
+=======
+<testsuite name="com.book.springboot.web.dto.HelloResponseDtoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-16T01:19:11" hostname="baggioui-MacBook-Pro.local" time="0.092">
+  <properties/>
+  <testcase name="롬복_기능_테스트" classname="com.book.springboot.web.dto.HelloResponseDtoTest" time="0.092"/>
+>>>>>>> d9bad4e35dba970b9423fc7634e9c8edc1da1251
+>>>>>>> eab7313 (Git 초기화)
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

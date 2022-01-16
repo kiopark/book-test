@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Manifest-Version: 1.0
 Main-Class: org.springframework.boot.loader.JarLauncher
 Start-Class: com.book.springboot.Application
@@ -5,3 +6,7 @@ Spring-Boot-Version: 2.2.1.RELEASE
 Spring-Boot-Classes: BOOT-INF/classes/
 Spring-Boot-Lib: BOOT-INF/lib/
 
+=======
+Manifest-Version: 1.0
+
+>>>>>>> eab7313 (Git 초기화)
